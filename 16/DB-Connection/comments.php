@@ -27,7 +27,7 @@ $posts = $result->fetch_all(MYSQLI_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنشورات</title>
+    <title>comments</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -127,7 +127,7 @@ $posts = $result->fetch_all(MYSQLI_ASSOC);
             <div class="reaction">😂 <span><?= $post['laugh_count']; ?></span></div>
         </div>
 
-        <div class="comments-toggle" onclick="toggleComments(this)">💬 <?= $post['number_of_comments']; ?> تعليقات</div>
+        <div class="comments-toggle" onclick="toggleComments(this)">💬 <?= $post['number_of_comments']; ?> comments</div>
         <div class="comments-section">
             <?php
             $all_comments = "SELECT flo_comments.*, flo_users.name 
