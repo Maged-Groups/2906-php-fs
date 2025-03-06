@@ -44,7 +44,25 @@ $posts = $result->fetch_all(MYSQLI_ASSOC);
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
+            
+            /* Animation */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-in-out forwards;
         }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .post-title {
             font-size: 18px;
             font-weight: bold;
@@ -155,6 +173,13 @@ $posts = $result->fetch_all(MYSQLI_ASSOC);
         commentsSection.style.display = isHidden ? "block" : "none";
         element.style.color = isHidden ? "#dc3545" : "#007bff";
     }
+    document.addEventListener("DOMContentLoaded", function() {
+    let posts = document.querySelectorAll(".post-container");
+    posts.forEach((post, index) => {
+        post.style.animationDelay = `${index * 0.2}s`;
+    });
+});
+
 </script>
 
 </body>
