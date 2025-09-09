@@ -1,0 +1,17 @@
+{
+    "name": "ahmed/17ahmedzakaria",
+    "require": {
+        "symfony/var-dumper": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "phahmed2024",
+            "email": "phahmed2004@gmail.com"
+        }
+    ]
+}

@@ -4,6 +4,11 @@ git init
 # Define yourself at GIT
 git config --global user.name "Your Name"
 git config --global user.email "your-email@domain.com"
+<<<<<<< HEAD
+# chang 'master' name to 'main'
+git branch -m main
+=======
+>>>>>>> eeddaefb29bcf6cea43df3f8d86203489a72072c
 
 # Add a file to the tracking list
 git add path-to-file
@@ -35,3 +40,11 @@ git reset HEAD~
 
 # clone (copy) someone's repo
 git clone repo link -> get from the green button in the repo
+# change branch from master to main
+git branch -m master main
+# link to repo in folder without making new folder
+git remote add origin repo_link
+
+
+
+

@@ -15,6 +15,7 @@
         <a href="variables.php">Variables</a>
         <a href="variables-01.php">Variables-01</a>
         <a href="functions.php">Functions</a>
+        <a href="day_8_challenge\a_z_8_challenge.php">Challenge 08</a>
     </nav>
 </body>
 </html>
